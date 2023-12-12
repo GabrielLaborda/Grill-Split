@@ -1,5 +1,5 @@
 import React from 'react'
-import "./individualAmount.css"
+import "./IndividualAmount.css"
 
 function individualAmount({foodPerGuest, beerPerGuest, whiskyPerGuest, winePerGuest, fernetPerGuest , dessertPerGuest, sodaPerGuest}) {
   return (
