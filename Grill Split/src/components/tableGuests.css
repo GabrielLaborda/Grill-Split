@@ -1,0 +1,62 @@
+.form-check-input:checked {
+  background-color: green;
+}
+.tdStart {
+  text-align: start;
+}
+.tdCenter {
+  text-align: center;
+}
+.tdEnd {
+  text-align: end;
+}
+th {
+  text-align: center;
+}
+.buttonTable {
+  background-color: #008000;
+  color: white;
+  font-weight: 600;
+  padding: 6px 12px 6px 12px;
+  border-radius: 8px;
+}
+.btnEliminar {
+  color: white;
+  font-size: 10px;
+  font-weight: 900;
+  background-color: #ff0000;
+  border-radius: 5px;
+}
+
+.toastPosition {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+.btnCancelTostify {
+  background-color: #c0c6ca;
+  color: black;
+  font-weight: 600;
+  padding: 6px 12px 6px 12px;
+  border-radius: 8px;
+}
+.btnConfirmarTostify {
+  color: white;
+  background-color: #ff0000;
+  font-weight: 600;
+  padding: 6px 12px 6px 12px;
+  border-radius: 8px;
+}
+.btnReloadPage {
+  background-color: #ff0000;
+  color: white;
+  font-weight: 600;
+  padding: 6px 12px 6px 12px;
+  border-radius: 8px;
+}
+.sticky-column {
+  position: sticky;
+  left: 0;
+}
