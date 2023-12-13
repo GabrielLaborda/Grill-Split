@@ -19,6 +19,7 @@ th {
   font-weight: 600;
   padding: 6px 12px 6px 12px;
   border-radius: 8px;
+  border: none;
 }
 .btnEliminar {
   color: white;
@@ -26,6 +27,7 @@ th {
   font-weight: 900;
   background-color: #ff0000;
   border-radius: 5px;
+  border: none;
 }
 
 .toastPosition {
@@ -41,6 +43,7 @@ th {
   font-weight: 600;
   padding: 6px 12px 6px 12px;
   border-radius: 8px;
+  border: none;
 }
 .btnConfirmarTostify {
   color: white;
@@ -48,6 +51,7 @@ th {
   font-weight: 600;
   padding: 6px 12px 6px 12px;
   border-radius: 8px;
+  border: none;
 }
 .btnReloadPage {
   background-color: #ff0000;
@@ -55,6 +59,7 @@ th {
   font-weight: 600;
   padding: 6px 12px 6px 12px;
   border-radius: 8px;
+  border: none;
 }
 .sticky-column {
   position: sticky;

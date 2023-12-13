@@ -70,7 +70,6 @@ function App() {
         };
     });
     setGuests(guestsUpdate);
-    console.log(guests)
   };
 
   const handleSubmit = (guestData) => {
@@ -123,7 +122,6 @@ function App() {
     };
     // Actualizar el estado de los participantes
     setGuests([...guests, guest]);
-    console.log(guests)
   };
 
   const handleDelete = (id) => {
