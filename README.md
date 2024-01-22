@@ -6,7 +6,7 @@ GrillSplit es una aplicación web para dividir los gastos de una asado entre los
 
 - **Registro de Participantes**: Agrega participantes con detalles sobre su aporte en comida, bebida, etc.
 - **Cálculo Automático**: Selecciona las casillas dependiendo de lo consumido por cada particpiante y calcula automáticamente la contribución individual y muestra cuánto debe pagar o recibir cada participante.
-- **Interfaz Intuitiva**: Interfaz de usuario fácil de usar para una experiencia sin complicaciones.
+- **Interfaz Intuitiva**: Interfaz de usuario fácil de usar para una experiencia sin complicaciones, sin necesidad de crear usuarios ni registrarse.
 
 ## Capturas de Pantalla
 

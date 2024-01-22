@@ -1,0 +1,12 @@
+.nav-pills .nav-link {
+  border-radius: 8px;
+  color: white;
+  font-size: 16px;
+}
+.nav-pills .nav-link.active {
+  background-color: rgb(184, 184, 184);
+  color: black;
+}
+.prueba {
+  min-height: 500px;
+}

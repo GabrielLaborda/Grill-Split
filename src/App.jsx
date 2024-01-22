@@ -5,7 +5,11 @@ import TableGuests from './components/TableGuests';
 import NavBar from './components/NavBar';
 import Footer from './components/Footer';
 import IndividualAmount from './components/IndividualAmount';
+import Instruction from './components/Instruction';
 import { v4 as uuidv4 } from 'uuid';
+import Tab from 'react-bootstrap/Tab';
+import Tabs from 'react-bootstrap/Tabs';
+import "./app.css"
 
 function App() {
   const [totalFood, setTotalFood] = useState(0);
@@ -26,7 +30,7 @@ function App() {
 
 
   const calculateResults = () => {
-   // Calcular los checkbox que estan marcados.
+   // Calcular la cantidad de checkbox que estan marcados por columna.
     let countFood = 0;
     let countBeer = 0;
     let countWhisky = 0;
@@ -45,7 +49,7 @@ function App() {
       countSoda += guest.checkboxSoda ? 1 : 0;
     });
 
-      //Actualizar el estado de Costo individuales
+      //Actualizar el estado de Costos Individuales
       setFoodPerGuest(countFood!==0?(totalFood / countFood).toFixed(0):0);
       setBeerPerGuest(countBeer!==0?(totalBeer / countBeer).toFixed(0):0);
       setWhiskyPerGuest(countWhisky!==0?(totalWhisky / countWhisky).toFixed(0):0);
@@ -99,7 +103,7 @@ function App() {
     setTotalDessert(newTotalDessert);
     setTotalSoda(newTotalSoda);
 
-    // Creamos un objeto con los datos del participante
+    // Objeto con los datos del participante
     const guest = {
       id: uuidv4(),
       name: guestData.name,
@@ -157,7 +161,7 @@ function App() {
   setTotalDessert(dessertUpdate);
   setTotalSoda(sodaUpdate);
 
-  // Actualizar el estado
+  // Actualizamos el estado
   setGuests(updatedGuests);
 };
 
@@ -171,10 +175,27 @@ function App() {
     <NavBar />
     <div className='bg-dark text-white pt-3'>
       <div className="container">
-        <div className="row">
-          <GuestForm onSubmit={handleSubmit}/>
-          <div className="col">
+        <Tabs defaultActiveKey="form"
+             variant='pills'
+              className="mb-3  mx-auto "
+              justify>
+          <Tab eventKey="form" title="Participante">
+            <GuestForm onSubmit={handleSubmit}/>
+          </Tab>
+          <Tab eventKey="guest" title="Lista" className='prueba'>
+            <div>
+              <TableGuests
+              guests={guests}
+              calculateResults={calculateResults}
+              setGuests={setGuests}
+              onDelete={handleDelete}
+              reloadPage={reloadPage}
+            />
+            </div>
+          </Tab>
+          <Tab eventKey="totals" title="Totales" className='prueba'>
             <div className="row">
+            <div className="col-6">
               <TotalsAmounts
               totalFood ={totalFood}
               totalBeer ={totalBeer}
@@ -185,7 +206,7 @@ function App() {
               totalSoda ={totalSoda}
               />
             </div>
-            <div className="row">
+            <div className="col-6">
               <IndividualAmount
               foodPerGuest ={foodPerGuest}
               beerPerGuest ={beerPerGuest}
@@ -196,18 +217,12 @@ function App() {
               sodaPerGuest ={sodaPerGuest}
               />
             </div>
-          </div>
-        </div>
-        <div>
-          <TableGuests
-          guests={guests}
-          calculateResults={calculateResults}
-          setGuests={setGuests}
-          onDelete={handleDelete}
-          reloadPage={reloadPage}
-        />
-      
-        </div>
+            </div>
+          </Tab>
+          <Tab eventKey="instructions" title="Instrucciones">
+            <Instruction />
+          </Tab>
+        </Tabs>
       </div>
       </div>
       <Footer />
@@ -217,4 +232,9 @@ function App() {
 
 export default App;
 
+/*
+      <Tab eventKey="home" title="Home">
+        Tab content for Home
+      </Tab>
 
+      */
