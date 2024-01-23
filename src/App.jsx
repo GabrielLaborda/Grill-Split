@@ -177,12 +177,12 @@ function App() {
       <div className="container">
         <Tabs defaultActiveKey="form"
              variant='pills'
-              className="mb-3  mx-auto "
+              className="mb-3  mx-auto"
               justify>
-          <Tab eventKey="form" title="Participante">
+          <Tab eventKey="form" title={<i className='bi bi-person-fill-add' style={{ fontSize: '1.5em' }}></i>} className='tabs-min-height'>
             <GuestForm onSubmit={handleSubmit}/>
           </Tab>
-          <Tab eventKey="guest" title="Lista" className='prueba'>
+          <Tab eventKey="guest" title={<i className='bi bi-list-check'style={{ fontSize: '1.5em' }}></i>} className='tabs-min-height'>
             <div>
               <TableGuests
               guests={guests}
@@ -193,7 +193,7 @@ function App() {
             />
             </div>
           </Tab>
-          <Tab eventKey="totals" title="Totales" className='prueba'>
+          <Tab eventKey="totals" title={<i className='bi bi-bar-chart-line-fill' style={{ fontSize: '1.5em' }}></i>} className='tabs-min-height'>
             <div className="row">
             <div className="col-6">
               <TotalsAmounts
@@ -219,7 +219,7 @@ function App() {
             </div>
             </div>
           </Tab>
-          <Tab eventKey="instructions" title="Instrucciones">
+          <Tab eventKey="instructions" title={<i className='bi bi-question-circle-fill' style={{ fontSize: '1.5em' }}></i>} className='tabs-min-height'>
             <Instruction />
           </Tab>
         </Tabs>

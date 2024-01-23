@@ -38,10 +38,10 @@ function Instruction() {
         <h2 className='mb-3'>Pestaña 3: Totales del Evento y por Concepto</h2>
         <ol>
           <li>
-            <strong>Visualización de Totales:</strong> Accede a la tercera pestaña para ver los totales del evento y los totales individuales por concepto (comida, bebidas, etc.).
+            <strong>Visualización de Totales:</strong> Accede a la tercera pestaña para ver los totales del evento.
           </li>
           <li>
-            <strong>Precio Individual:</strong> La tabla te mostrará cuánto debe pagar cada participante por cada concepto.
+            <strong>Precio Individual:</strong> La tabla te mostrará cuánto debe pagar cada participante por cada concepto que haya consumido.
           </li>
         </ol>
       </div>
