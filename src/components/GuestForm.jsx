@@ -15,7 +15,7 @@ const GuestForm = ({ onSubmit }) => {
   }
 
   return (
-    <div className="col">
+    <div className="col ms-5">
         <h3>Ingrese al participante</h3>
         <Form
         onSubmit={(values, form) => {
@@ -38,6 +38,14 @@ const GuestForm = ({ onSubmit }) => {
                 <div className="form-floating mb-2">
                   <input type="number" className="form-control w-75" id="comida" placeholder="Comida" {...input} />
                   <label htmlFor="comida">Comida</label>
+                </div>
+              )}
+            </Field>
+            <Field name="soda">
+              {({ input }) => (
+                <div className="form-floating mb-2">
+                  <input type="number" className="form-control w-75" id="refresco" placeholder="Refresco" {...input} />
+                  <label htmlFor="refresco">Refresco</label>
                 </div>
               )}
             </Field>
@@ -78,14 +86,6 @@ const GuestForm = ({ onSubmit }) => {
                 <div className="form-floating mb-2">
                   <input type="number" className="form-control w-75" id="postre" placeholder="Postre" {...input} />
                   <label htmlFor="postre">Postre</label>
-                </div>
-              )}
-            </Field>
-            <Field name="soda">
-              {({ input }) => (
-                <div className="form-floating mb-2">
-                  <input type="number" className="form-control w-75" id="refresco" placeholder="Refresco" {...input} />
-                  <label htmlFor="refresco">Refresco</label>
                 </div>
               )}
             </Field>

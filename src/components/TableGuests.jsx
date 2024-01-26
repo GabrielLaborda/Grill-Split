@@ -43,12 +43,12 @@ const TableGuests = ({ guests,calculateResults, setGuests, onDelete, reloadPage}
             <th scope="col">Pagar</th>
             <th scope="col">Cobrar</th>
             <th scope="col">Comida</th>
+            <th scope="col">Refresco</th>
             <th scope="col">Cerveza</th>
             <th scope="col">Whisky</th>
             <th scope="col">Vino</th>
             <th scope="col">Fernet</th>
             <th scope="col">Postre</th>
-            <th scope="col">Refresco</th>
             <th scope="col">Eliminar</th>
           </tr>
         </thead>
@@ -77,6 +77,28 @@ const TableGuests = ({ guests,calculateResults, setGuests, onDelete, reloadPage}
                         return {
                           ...p,
                           checkboxFood: !p.checkboxFood,
+                        };
+                      }
+                      return p;
+                    });
+                    setGuests(updatedguests);
+                  }} >
+                </input>
+              </div>
+            </td>
+            <td className='tdCenter'>
+              <div>
+                <input
+                  className="form-check-input border-black border-opacity-50"
+                  type="checkbox"
+                  id={`checkboxSoda-${guest.id}`}
+                  checked={guest && guest.checkboxSoda}
+                  onChange={() => {
+                    const updatedguests = guests.map((p) => {
+                      if (p.id === guest.id) {
+                        return {
+                          ...p,
+                          checkboxSoda: !p.checkboxSoda,
                         };
                       }
                       return p;
@@ -187,28 +209,6 @@ const TableGuests = ({ guests,calculateResults, setGuests, onDelete, reloadPage}
                         return {
                           ...p,
                           checkboxDessert: !p.checkboxDessert,
-                        };
-                      }
-                      return p;
-                    });
-                    setGuests(updatedguests);
-                  }} >
-                </input>
-              </div>
-            </td>
-            <td className='tdCenter'>
-              <div>
-                <input
-                  className="form-check-input border-black border-opacity-50"
-                  type="checkbox"
-                  id={`checkboxSoda-${guest.id}`}
-                  checked={guest && guest.checkboxSoda}
-                  onChange={() => {
-                    const updatedguests = guests.map((p) => {
-                      if (p.id === guest.id) {
-                        return {
-                          ...p,
-                          checkboxSoda: !p.checkboxSoda,
                         };
                       }
                       return p;

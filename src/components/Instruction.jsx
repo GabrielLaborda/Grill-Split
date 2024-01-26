@@ -9,7 +9,7 @@ function Instruction() {
         <h2 className='mb-3'>Pestaña 1: Formulario de Participantes y Aportes</h2>
         <ol>
           <li>
-            <strong>Completa el Formulario:</strong> Completa el formulario ingresando los nombres de los participantes y la cantidad que aportaron en  comida, bebidas, alcohol, postre, etc.
+            <strong>Completa el Formulario:</strong> Completa el formulario ingresando los nombres de los participantes y el importe en $ que aportaron en  comida, bebidas, alcohol, postre, etc.
           </li>
           <li>
             <strong>Guardar Datos:</strong> Una vez que hayas ingresado toda la información, presiona el botón "Agregar" para registrar los datos de los participantes y sus aportes.
@@ -38,15 +38,15 @@ function Instruction() {
         <h2 className='mb-3'>Pestaña 3: Totales del Evento y por Concepto</h2>
         <ol>
           <li>
-            <strong>Visualización de Totales:</strong> Accede a la tercera pestaña para ver los totales del evento.
+            <strong>Total Evento:</strong> Accede a la tercera pestaña para ver los totales del evento.
           </li>
           <li>
-            <strong>Precio Individual:</strong> La tabla te mostrará cuánto debe pagar cada participante por cada concepto que haya consumido.
+            <strong>Precio por Persona:</strong> La tabla te mostrará cuánto debe pagar cada participante por cada concepto que haya consumido.
           </li>
         </ol>
       </div>
 
-      <p className='pb-5 m-0'>¡Listo! Con estas simples instrucciones, podrás utilizar DivideGastosAsado de manera efectiva y equitativa. ¡Disfruta de tus comidas compartidas!</p>
+      <p className='pb-5 m-0'>¡Listo! Con estas simples instrucciones, podrás utilizar GRILL SPLIT de manera efectiva y equitativa. ¡Disfruta de tus comidas compartidas!</p>
     </>
   )
 }

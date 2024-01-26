@@ -177,7 +177,7 @@ function App() {
       <div className="container">
         <Tabs defaultActiveKey="form"
              variant='pills'
-              className="mb-3  mx-auto"
+              className="mb-3"
               justify>
           <Tab eventKey="form" title={<i className='bi bi-person-fill-add' style={{ fontSize: '1.5em' }}></i>} className='tabs-min-height'>
             <GuestForm onSubmit={handleSubmit}/>
