@@ -10,9 +10,10 @@ GrillSplit es una aplicación web para dividir los gastos de una asado entre los
 
 ## Capturas de Pantalla
 
-<!-- ![Captura 1](./public/img/GrillSplit_1.png)
-![Captura 2](./public/img/GrillSplit_2.png)
-![Captura 3](./public/img/GrillSplit_3.png) -->
+![Captura 1](./public/img/GrillSplit_11.png)
+![Captura 2](./public/img/GrillSplit_22.png)
+![Captura 3](./public/img/GrillSplit_33.png)
+![Captura 4](./public/img/GrillSplit_4.png)
 
 ## Tecnologías Utilizadas
 
